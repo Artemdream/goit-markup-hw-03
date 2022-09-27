@@ -363,7 +363,7 @@ header {
   margin-bottom: 9px;
 }
 
-.contact-item:last-child{
+.contact-item-footer:last-child{
   margin-bottom: 0;
 }
 
