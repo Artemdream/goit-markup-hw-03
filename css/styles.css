@@ -81,6 +81,19 @@ header {
   padding: 24px 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ------------header---------------- */
 
 
@@ -225,9 +238,13 @@ header {
 
 .team-list{
   display: flex;
-  justify-content: space-around;
+  
+  gap: 30px;
 }
+
+
 .team-item {
+  width: calc((100% - 3 * 30px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -247,6 +264,7 @@ header {
 }
 
 .name-employee {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -266,7 +284,6 @@ header {
 .main {
   background-color: var(--primary-white-color);
 }
-
 
 .main-list {
   display: flex;
@@ -296,10 +313,6 @@ header {
   background-color: var(--accent-color);
 }
 
-.section.project {
-  display: flex;
-}
-
 .project-item {
   display: inline-block;
   width: calc((100% - 2 * 30px) / 3);
@@ -314,7 +327,6 @@ header {
 
 .project-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
